@@ -1,0 +1,103 @@
+A.I Lab Manual By Saqib Hussain
+Roll No: BIT-23F-014
+Python Programming Tasks (loop tasks)
+
+1. Print numbers from 1 to 10 using a for loop
+for i in range(1, 11):
+    print(i)
+
+Output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+2. Print all even numbers between 1 and 20 using a while loop
+n = 1
+while n <= 20:
+    if n % 2 == 0:
+        print(n)
+    n += 1
+
+Output:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+3. Calculate the sum of numbers from 1 to 100 using a loop
+total = 0
+for i in range(1, 101):
+    total += i
+print(total)
+
+Output:
+5050
+
+4. Print the multiplication table of 5 using a loop
+for i in range(1, 11):
+    print(f"5 x {i} = {5 * i}")
+
+Output:
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+5. Find the factorial of a given number using a for loop (example: 6!)
+n = 6
+fact = 1
+for i in range(1, n + 1):
+    fact *= i
+print(fact)
+
+Output:
+720
+
+6. Iterate over a list of fruits and print each item
+fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+for fruit in fruits:
+    print(fruit)
+
+Output:
+apple
+banana
+cherry
+date
+elderberry
+
+7. Create a list of numbers and print only the odd numbers using a loop
+numbers = list(range(1, 21))
+for num in numbers:
+    if num % 2 != 0:
+        print(num)
+
+Output:
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19

@@ -1,0 +1,306 @@
+A.I Lab Manual By Saqib Hussain
+Roll No: BIT-23F-014
+Python Programming Tasks (lab no 1)
+
+Python Data Types with Programs and Outputs
+
+Integer (int)
+Program 1:
+# Program 1: Sum of two integers
+a = 10
+b = 5
+print("Sum:", a + b)
+Output:
+Sum: 15
+
+Program 2:
+# Program 2: Check if a number is even
+num = 8
+print("Is even?", num % 2 == 0)
+Output:
+Is even? True
+
+Float
+Program 1:
+# Program 1: Calculate area of circle
+radius = 4.5
+area = 3.14 * radius ** 2
+print("Area:", area)
+Output:
+Area: 63.585
+
+Program 2:
+# Program 2: Convert Celsius to Fahrenheit
+celsius = 25.0
+fahrenheit = (celsius * 9/5) + 32
+print("Fahrenheit:", fahrenheit)
+Output:
+Fahrenheit: 77.0
+
+String (str)
+Program 1:
+# Program 1: Concatenate two strings
+first = "Hello"
+second = "World"
+print(first + " " + second)
+Output:
+Hello World
+
+Program 2:
+# Program 2: Count characters in a string
+text = "Python"
+print("Length:", len(text))
+Output:
+Length: 6
+
+Boolean (bool)
+Program 1:
+# Program 1: Check if number is positive
+num = -3
+print("Is positive?", num > 0)
+Output:
+Is positive? False
+
+Program 2:
+# Program 2: Validate login (simple check)
+username = "admin"
+print("Login valid?", username == "admin")
+Output:
+Login valid? True
+
+List
+Program 1:
+# Program 1: Add elements to a list
+fruits = ["apple", "banana"]
+fruits.append("mango")
+print(fruits)
+Output:
+['apple', 'banana', 'mango']
+
+Program 2:
+# Program 2: Find length of a list
+numbers = [1, 2, 3, 4]
+print("Total items:", len(numbers))
+Output:
+Total items: 4
+
+Tuple
+Program 1:
+# Program 1: Access tuple element
+person = ("Ali", 25)
+print("Name:", person[0])
+Output:
+Name: Ali
+
+Program 2:
+# Program 2: Check item in tuple
+colors = ("red", "blue", "green")
+print("blue" in colors)
+Output:
+True
+
+Set
+Program 1:
+# Program 1: Remove duplicates from list using set
+items = [1, 2, 2, 3, 3, 4]
+unique_items = set(items)
+print(unique_items)
+Output:
+{1, 2, 3, 4}
+
+Program 2:
+# Program 2: Set operations
+a = {1, 2, 3}
+b = {3, 4, 5}
+print("Union:", a | b)
+Output:
+Union: {1, 2, 3, 4, 5}
+
+Dictionary (dict)
+Program 1:
+# Program 1: Create and access dictionary
+student = {"name": "Sara", "age": 20}
+print("Name:", student["name"])
+Output:
+Name: Sara
+
+Program 2:
+# Program 2: Add key-value pair
+car = {"brand": "Toyota"}
+car["year"] = 2020
+print(car)
+Output:
+{'brand': 'Toyota', 'year': 2020}
+
+
+
+# Shape Programs in Python
+
+Below are five Python programs using `*` to draw shapes. Each program is followed by its console output.
+
+---
+
+## 1. Right-Angled Triangle
+```python
+for i in range(1, 6):
+    print('*' * i)
+```
+**Output:**
+```
+*
+**
+***
+****
+*****
+```
+
+---
+
+## 2. Pyramid
+```python
+rows = 5
+for i in range(rows):
+    print(' ' * (rows - i - 1) + '*' * (2 * i + 1))
+```
+**Output:**
+```
+    *
+   ***
+  *****
+ *******
+*********
+```
+
+---
+
+## 3. Square
+```python
+size = 5
+for i in range(size):
+    print('*' * size)
+```
+**Output:**
+```
+*****
+*****
+*****
+*****
+*****
+```
+
+---
+
+## 4. Inverted Triangle
+```python
+for i in range(5, 0, -1):
+    print('*' * i)
+```
+**Output:**
+```
+*****
+****
+***
+**
+*
+```
+
+---
+
+## 5. Diamond
+```python
+rows = 4
+for i in range(rows):
+    print(' ' * (rows - i - 1) + '*' * (2 * i + 1))
+for i in range(rows - 2, -1, -1):
+    print(' ' * (rows - i - 1) + '*' * (2 * i + 1))
+```
+**Output:**
+```
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+```
+
+
+
+Python Shape Programs Using * Multiplication by Number 
+Right-Angled Triangle:
+Code:
+for i in range(1, 6):
+    print('*' * i)
+
+Output:
+*
+**
+***
+****
+*****
+
+Pyramid:
+Code:
+rows = 5
+for i in range(rows):
+    spaces = ' ' * (rows - i - 1)
+    stars = '*' * (2 * i + 1)
+    print(spaces + stars)
+
+Output:
+    *
+   ***
+  *****
+ *******
+*********
+
+Square:
+Code:
+size = 5
+for _ in range(size):
+    print('*' * size)
+
+Output:
+*****
+*****
+*****
+*****
+*****
+
+Inverted Triangle:
+Code:
+for i in range(5, 0, -1):
+    print('*' * i)
+
+Output:
+*****
+****
+***
+**
+*
+
+Diamond:
+Code:
+rows = 4
+# Top half
+for i in range(rows):
+    spaces = ' ' * (rows - i - 1)
+    stars = '*' * (2 * i + 1)
+    print(spaces + stars)
+# Bottom half
+for i in range(rows - 2, -1, -1):
+    spaces = ' ' * (rows - i - 1)
+    stars = '*' * (2 * i + 1)
+    print(spaces + stars)
+
+Output:
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+

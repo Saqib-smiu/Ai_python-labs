@@ -1,0 +1,58 @@
+A.I Lab Manual By Saqib Hussain
+Roll No: BIT-23F-014
+Python Programming Tasks (lab no 5)
+
+Python Programs: Basic to Advanced
+
+1. Basic Task: Check if a number is positive, negative, or zero
+Code:
+# Basic Task
+num = float(input("Enter a number: "))
+
+if num > 0:
+    print("The number is positive.")
+elif num < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+
+ Output:
+Enter a number: -12
+The number is negative.
+
+--------------------------------------------------
+
+2. Intermediate Task: Check if a number is even or odd
+Code:
+# Intermediate Task
+num = int(input("Enter an integer: "))
+
+if num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+
+ Output:
+Enter an integer: 7
+The number is odd.
+
+--------------------------------------------------
+
+3. Advanced Task: Grade Evaluation
+Code:
+# Advanced Task
+marks = int(input("Enter your marks: "))
+
+if marks > 80:
+    print("Excellent")
+elif 60 <= marks <= 80:
+    print("Good")
+else:
+    print("Needs Improvement")
+
+ Output:
+Enter your marks: 75
+Good
+
+--------------------------------------------------
+

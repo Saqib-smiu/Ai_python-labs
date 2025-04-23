@@ -1,0 +1,43 @@
+A.I Lab Manual By Saqib Hussain
+Roll No: BIT-23F-014
+Python Programming Tasks (lab no 7)
+
+Python Functions Tasks
+
+Task 1: Multiply Two Numbers
+----------------------------
+def multiply(a, b):
+    return a * b
+
+
+result = multiply(4, 5)
+print("Product:", result)
+
+Output:
+Product: 20
+
+Task 2: Check Even or Odd
+--------------------------
+def check_even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+
+status = check_even_odd(7)
+print("Number is:", status)
+
+Output:
+Number is: Odd
+
+Task 3: Greet with Name and Age
+-------------------------------
+def greet(name, age):
+    print(f"Hello, {name}! You are {age} years old.")
+
+
+greet("Alice", 30)
+
+Output:
+Hello, Alice! You are 30 years old.

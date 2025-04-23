@@ -1,0 +1,132 @@
+A.I Lab Manual By Saqib Hussain
+Roll No: BIT-23F-014
+Python Programming Tasks (lab no 4)
+
+Python Programming Tasks
+
+1. Arithmetic Operations on Two Numbers
+Code:
+# Input two numbers
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Perform arithmetic operations
+print("Addition:", num1 + num2)
+print("Subtraction:", num1 - num2)
+print("Multiplication:", num1 * num2)
+print("Division:", num1 / num2)
+print("Modulus:", num1 % num2)
+print("Exponentiation:", num1 ** num2)
+Output:
+Enter first number: 10
+Enter second number: 5
+Addition: 15.0
+Subtraction: 5.0
+Multiplication: 50.0
+Division: 2.0
+Modulus: 0.0
+Exponentiation: 100000.0
+
+==================================================
+
+2. Function for Arithmetic Operations
+Code:
+def arithmetic_operations(a, b):
+    return a + b, a - b, a * b, a / b
+
+# Example usage
+sum_, diff, prod, quot = arithmetic_operations(20, 4)
+print("Sum:", sum_)
+print("Difference:", diff)
+print("Product:", prod)
+print("Quotient:", quot)
+Output:
+Sum: 24
+Difference: 16
+Product: 80
+Quotient: 5.0
+
+==================================================
+
+3. Find Remainder of Division
+Code:
+# Input two numbers
+num1 = int(input("Enter dividend: "))
+num2 = int(input("Enter divisor: "))
+
+# Find remainder
+remainder = num1 % num2
+print("Remainder:", remainder)
+Output:
+Enter dividend: 17
+Enter divisor: 4
+Remainder: 1
+
+==================================================
+
+4. Area of a Circle
+Code:
+import math
+
+# Input radius
+radius = float(input("Enter the radius of the circle: "))
+
+# Calculate area
+area = math.pi * radius ** 2
+print("Area of the circle is:", area)
+Output:
+Enter the radius of the circle: 3
+Area of the circle is: 28.274333882308138
+
+==================================================
+
+5. Square and Cube using Exponentiation
+Code:
+# Input number
+num = int(input("Enter a number: "))
+
+# Calculate square and cube
+square = num ** 2
+cube = num ** 3
+
+print("Square:", square)
+print("Cube:", cube)
+ Output:
+Enter a number: 4
+Square: 16
+Cube: 64
+
+==================================================
+
+6. Simple Calculator
+Code:
+def calculator():
+    print("Select operation: +, -, *, /")
+    op = input("Enter operation: ")
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    if op == '+':
+        print("Result:", a + b)
+    elif op == '-':
+        print("Result:", a - b)
+    elif op == '*':
+        print("Result:", a * b)
+    elif op == '/':
+        if b != 0:
+            print("Result:", a / b)
+        else:
+            print("Error: Division by zero.")
+    else:
+        print("Invalid operation.")
+
+calculator()
+ Output:
+Select operation: +, -, *, /
+Enter operation: *
+Enter first number: 6
+Enter second number: 7
+Result: 42.0
+
+==================================================
+
