@@ -1,0 +1,109 @@
+A.I Lab Manual By Saqib Hussain
+Roll No: BIT-23F-014
+Python Programming Tasks (lab no 8)
+TASK 1: Calculator Using Only + and - Operators
+
+Code:
+-------
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    result = 0
+    positive = True
+    
+    if b < 0:
+        b = -b
+        positive = not positive
+    if a < 0:
+        a = -a
+        positive = not positive
+    
+    for _ in range(b):
+        result = add(result, a)
+        
+    return result if positive else -result
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero"
+    
+    quotient = 0
+    negative = (a < 0) != (b < 0)
+    
+    a, b = abs(a), abs(b)
+    while a >= b:
+        a = subtract(a, b)
+        quotient = add(quotient, 1)
+    
+    return -quotient if negative else quotient
+
+# Example usage
+a = 15
+b = -3
+print("Addition:", add(a, b))
+print("Subtraction:", subtract(a, b))
+print("Multiplication:", multiply(a, b))
+print("Division:", divide(a, b))
+
+Output:
+--------
+Addition: 12
+Subtraction: 18
+Multiplication: -45
+Division: -5
+
+
+TASK 2: Draw Shape with Stars
+
+Code:
+-------
+
+def print_triangle(height):
+    for i in range(1, height + 1):
+        print('*' * i)
+
+def print_rectangle(height, width):
+    for _ in range(height):
+        print('*' * width)
+
+def draw_shape():
+    shape = input("Enter the shape (triangle/rectangle): ").strip().lower()
+
+    if shape == "triangle":
+        height = int(input("Enter the height of the triangle: "))
+        print_triangle(height)
+
+    elif shape == "rectangle":
+        height = int(input("Enter the height of the rectangle: "))
+        width = int(input("Enter the width of the rectangle: "))
+        print_rectangle(height, width)
+
+    else:
+        print("Invalid shape. Please choose either 'triangle' or 'rectangle'.")
+
+# Example usage
+draw_shape()
+
+Output Example 1:
+------------------
+Enter the shape (triangle/rectangle): triangle
+Enter the height of the triangle: 4
+*
+**
+***
+****
+
+Output Example 2:
+------------------
+Enter the shape (triangle/rectangle): rectangle
+Enter the height of the rectangle: 3
+Enter the width of the rectangle: 5
+*****
+*****
+*****
+

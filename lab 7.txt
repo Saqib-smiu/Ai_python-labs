@@ -1,0 +1,43 @@
+A.I Lab Manual By Saqib Hussain
+Roll No: BIT-23F-014
+Python Programming Tasks (lab no 7)
+
+Task 1: Function to return the product of two numbers
+
+def multiply_numbers(a, b):
+    return a * b
+
+# Example usage:
+result = multiply_numbers(4, 5)
+print("Product:", result)
+
+# Output:
+# Product: 20
+
+
+Task 2: Function to check whether a number is even or odd
+
+def check_even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+# Example usage:
+result = check_even_odd(7)
+print("The number is", result)
+
+# Output:
+# The number is Odd
+
+
+Task 3: Function to greet user with name and age
+
+def greet_user(name, age):
+    print(f"Hello {name}, you are {age} years old!")
+
+# Example usage:
+greet_user("Ali", 25)
+
+# Output:
+# Hello Ali, you are 25 years old!
